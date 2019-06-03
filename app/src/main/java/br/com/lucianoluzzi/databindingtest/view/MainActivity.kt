@@ -16,5 +16,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.viewModel = nameViewModel
+        binding.lifecycleOwner = this
+    }
+
+    override fun onResume() {
+        super.onResume()
+        nameViewModel.fetchNames()
     }
 }
