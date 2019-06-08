@@ -1,4 +1,4 @@
-package br.com.lucianoluzzi.databindingtest.model
+package br.com.lucianoluzzi.databindingtest.view
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import br.com.lucianoluzzi.databindingtest.R
 import br.com.lucianoluzzi.databindingtest.databinding.NameItemBinding
+import br.com.lucianoluzzi.databindingtest.model.NameModel
 
 class NamesAdapter(private val context: Context, private val names: List<NameModel>) :
     RecyclerView.Adapter<NameViewHolder>() {
